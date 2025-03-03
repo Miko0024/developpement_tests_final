@@ -26,5 +26,19 @@
     "fname": "test",
     "phone": "9999999999",
     "email": "test@test.com"
+  },
+  {
+    "id": "1740992246498",
+    "lname": "Dupont",
+    "fname": "Jean",
+    "phone": "0123456789",
+    "email": "jean.dupont@example.com"
+  },
+  {
+    "id": "1740992246831",
+    "lname": "Martins",
+    "fname": "Sophie",
+    "phone": "0987654321",
+    "email": "sophie.martin@example.com"
   }
 ]
