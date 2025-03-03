@@ -1,0 +1,9 @@
+{
+    "type": "commonjs",
+    "scripts": {
+        "test": "cucumber-js"
+    },
+    "devDependencies": {
+        "@cucumber/cucumber": "^11.2.0"
+    }
+}

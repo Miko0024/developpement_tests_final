@@ -1,0 +1,124 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #eef2f7;
+}
+
+/* Centrage du header et du bouton Ajouter */
+.header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#add-contacts-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#add-contacts-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Style du formulaire */
+#contact-form-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.form-buttons button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.form-buttons button:hover {
+    background-color: #218838;
+}
+
+/* Style des contacts en grille */
+#contacts-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.contact-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-card:hover {
+    background-color: #f4f2ee;
+}
+
+.contact-card h3 {
+    margin: 0;
+}
+
+.contact-card p {
+    margin: 5px 0;
+}
+
+.contact-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-actions button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+}
+
+.contact-actions .edit-btn {
+    background-color: #ffc107;
+}
+
+.contact-actions .edit-btn:hover {
+    background-color: #e0a800;
+}
+
+.contact-actions .delete-btn {
+    background-color: #dc3545;
+}
+
+.contact-actions .delete-btn:hover {
+    background-color: #c82333;
+}

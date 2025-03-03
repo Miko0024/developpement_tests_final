@@ -1,0 +1,42 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gestionnaire de Contacts</title>
+    <style>
+        .hidden { display: none; }
+        .error { color: red; }
+        .success { color: green; }
+    </style>
+</head>
+<body>
+    <div id="contacts-section" class="hidden">
+        <div class="header">
+            <button id="all-contacts-btn">Afficher les contacts</button>
+            <button id="add-contacts-btn">Ajouter un contact</button>
+        </div>
+
+        <div id="contact-form-container">
+            <form id="contact-form">
+                <input type="text" name="contactLastName" id="contact-last-name" placeholder="Ajouter le nom du contact" required>
+                <input type="text" name="contactFirstName" id="contact-first-name" placeholder="Ajouter le prénom du contact" required>
+                <input type="text" name="contactPhone" id="contact-phone" placeholder="Ajouter le numéro de téléphone du contact" required>
+                <input type="text" name="contactEmail" id="contact-email" placeholder="Ajouter le courriel du contact" required>
+                <div class="form-buttons">
+                    <button type="submit">Ajouter</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="contacts-container">
+            <ul id="contacts-list"></ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
